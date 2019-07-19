@@ -7,17 +7,17 @@
   
   <title>李珂的遗忘角落</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="likessssppp ssspp">
+  <meta name="description" content="1.写一个正则表达式判断一个字符串是否是ip地址规则：一个ip地址由4个数字组成，每个数字之间用.连接。每个数字的大小是0-255255.189.10.37   正确256.189.89.9    错误   12ip = r&apos;((1?[0-9]&amp;#123;1,2&amp;#125;|(2(5[0-5]|[0-4][0-9])))\.)&amp;#123;3&amp;#125;(1?[0-9]&amp;#123;1,2&amp;#125;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="李珂的遗忘角落">
 <meta property="og:url" content="http://yoursite.com/2019/06/01/like/index.html">
 <meta property="og:site_name" content="李珂的遗忘角落">
-<meta property="og:description" content="likessssppp ssspp">
+<meta property="og:description" content="1.写一个正则表达式判断一个字符串是否是ip地址规则：一个ip地址由4个数字组成，每个数字之间用.连接。每个数字的大小是0-255255.189.10.37   正确256.189.89.9    错误   12ip = r&apos;((1?[0-9]&amp;#123;1,2&amp;#125;|(2(5[0-5]|[0-4][0-9])))\.)&amp;#123;3&amp;#125;(1?[0-9]&amp;#123;1,2&amp;#125;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-19T08:27:30.656Z">
+<meta property="og:updated_time" content="2019-07-19T09:00:20.854Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="李珂的遗忘角落">
-<meta name="twitter:description" content="likessssppp ssspp">
+<meta name="twitter:description" content="1.写一个正则表达式判断一个字符串是否是ip地址规则：一个ip地址由4个数字组成，每个数字之间用.连接。每个数字的大小是0-255255.189.10.37   正确256.189.89.9    错误   12ip = r&apos;((1?[0-9]&amp;#123;1,2&amp;#125;|(2(5[0-5]|[0-4][0-9])))\.)&amp;#123;3&amp;#125;(1?[0-9]&amp;#123;1,2&amp;#125;">
   
     <link rel="alternate" href="/atom.xml" title="李珂的遗忘角落" type="application/atom+xml">
   
@@ -76,12 +76,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>likessssppp ssspp</p>
+        <p>1.写一个正则表达式判断一个字符串是否是ip地址<br>规则：一个ip地址由4个数字组成，每个数字之间用.连接。每个数字的大小是0-255<br>255.189.10.37   正确<br>256.189.89.9    错误  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ip = <span class="string">r'((1?[0-9]&#123;1,2&#125;|(2(5[0-5]|[0-4][0-9])))\.)&#123;3&#125;(1?[0-9]&#123;1,2&#125;|(2(5[0-5]|[0-4][0-9])))'</span></span><br><span class="line">print(re.fullmatch(ip, <span class="string">'255.189.10.37'</span>))</span><br></pre></td></tr></table></figure>
 
+<p>2.计算一个字符串中所有的数字的和<br>例如：字符串是：‘hello90abc 78sjh12.5’ 结果是90+78+12.5 = 180.5 </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">re_str2 = <span class="string">r'\d+\.\d*|\d+'</span></span><br><span class="line">n = re.finditer(re_str2, <span class="string">'hello90abc 78sjh12.5'</span>)</span><br><span class="line">sum1 = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> n:</span><br><span class="line">    sum1 += float(x.group())</span><br><span class="line">print(sum1)</span><br></pre></td></tr></table></figure>
+
+<p>3.验证输入的内容只能是汉字</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">re_str3 = <span class="string">r'[\u4e00-\u9fa5]+'</span></span><br><span class="line">print(re.fullmatch(re_str3, <span class="string">'汉字'</span>))</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/06/01/like/" data-id="cjy9v4qgx0001t0veyq9i01kv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/06/01/like/" data-id="cjy9viz1u0001dgvefte1vnhf" class="article-share-link">Share</a>
       
       
     </footer>
